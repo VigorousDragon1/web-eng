@@ -1,44 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>services</title>
-  </head>
-  <body>
-    <section >
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="Services.html">Services</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-        </ul>
-      </nav>
-    </section>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Services</title> 
+    <link rel="stylesheet" href="services.css">
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head> 
+<body> 
+    <header id="header">
+        <div class="left">
+          <h2>My Portfolio</h2>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section>
 
-    <section>
-      <h1>List of Services</h1>
+    <!-- Services Section --> 
+    <section class="container my-5"> 
+        <h1 class="text-center mb-4">List of Services</h1> 
+        <div class="table-responsive"> 
+            <table class="table table-striped table-bordered"> 
+                <thead class="table-dark"> 
+                    <tr> 
+                        <th>Skill</th> 
+                        <th>Software</th> 
+                        <th>Projects</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>WordPress</td> 
+                        <td>Adobe Photoshop</td> 
+                        <td>Blog Website</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Backend/Node.js</td> 
+                        <td>Illustrator</td> 
+                        <td>E-commerce Website</td> 
+                    </tr> 
+                </tbody> 
+            </table> 
+        </div> 
+    </section> 
 
-      <!-- //a table showcasing skills ,softwares and projects -->
-      <table>
-        <tr>
-          <th>Skill</th>
-          <th>Software</th>
-          <th>projects</th>
-        </tr>
-        <tr>
-          <td>Wordpress</td>
-          <td>Adobe Photoshop</td>
-          <td>blog website</td>
-        </tr>
-        <tr>
-          <td>Backend/node.js</td>
-          <td>Illustrator</td>
-          <td>Ecommerce website</td>
-        </tr>
-      </table>
-    </section>
-  </body>
+    <!-- Footer --> 
+    <footer class="bg-dark text-white text-center py-4"> 
+        <div class="container"> 
+            <p class="mb-0">&copy; 2023 My Website. All rights reserved.</p> 
+        </div> 
+    </footer> 
+
+    <!-- Bootstrap JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+</body> 
 </html>

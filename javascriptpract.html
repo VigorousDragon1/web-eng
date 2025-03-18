@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Myfunction(){
+            alert("My nAME IS Nauman");
+        }
+        function Headchange(){
+            document.getElementById("heading1").innerHTML="Hello Iam Nauman";
+        }
+        function colChange(){
+          const head=  document.getElementById("heading1")
+            head.color("red")
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="Myfunction()"> Name Button</button>
+    <button onclick="alert('Nauman is my name')"> Name Button</button>
+<h1 id="heading1">Hello</h1>
+<button onclick="Headchange(),colChange()"> Name Change</button>
+</body>
+</html>

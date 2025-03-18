@@ -4,27 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- A navbar using relative links -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="faq.html">FAQs</a></li>
-      </ul>
-    </nav>
+    <header id="header">
+      <div class="left">
+        <h2>My Portfolio</h2>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <h1>Introduction</h1>
-    <p>This a simple HTML 5 pages web-engineering assignment.</p>
-    <!-- using a video tag on home page -->
+    <main>
+      <section class="first">
+        <div class="leftsec">
+          Hi there,This is Nauman
+          <div id="passionate">And I am Passionate </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsec">
+          <img src="mypng.png" alt="">
+        </div>
+      </section>
+    </main>
+    <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <video width="320" height="240" controls>
-        <source src="5198042-uhd_3840_2160_30fps.mp4" type="video/mp4" >
-      
-      Your browser does not support the video tag.
-      </video>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Wordpress Developer','Database Designer'],
+      typeSpeed: 50,
+    });
+  </script>
   </body>
 </html>
